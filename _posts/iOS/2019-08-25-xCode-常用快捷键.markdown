@@ -1,0 +1,82 @@
+---
+layout:     post
+title:      "xCode-常用快捷键"
+subtitle:   ""
+author:     "Larry"
+header-img: "img/post-bg.jpg"
+categories: [iOS]
+tags:
+    - 快捷键
+---
+
+- 停止当前的命令
+```
+Ctrl+Z
+```
+
+- 打开偏好设置(Preferences) 
+```
+command + ,
+```
+
+- 隐藏Xcode窗口
+`command + H`
+
+- 关闭Xcode
+`command + Q`
+
+- 新建文件(调出新建文件窗口)
+`command + N`
+
+- 新建工程(New Project...)
+`Shift + command + N`
+
+- 关闭一个Tab(当只有一个Tab时，会关闭当前窗口) Close Tab
+`command + W`
+
+- 关闭窗口(Close Window)
+`Shift + command + W`
+
+- 折叠文件夹列表
+`Command` + 点击收起 
+
+- 局部折叠（折叠一个函数）
+`Command+Option+Left/Right` 
+
+- 全局折叠（折叠当前文件下的全部函数）
+`Shift+Command+Option+Left/Right` 
+
+- 折叠注释块：（/* */之间的文字）
+`Ctrl+Shift+Command+Left/Right` 
+
+- 保存当前文件(Save)
+`command + S`
+
+- 保存所有文件(Save All)
+`Option(alt) + command + S`
+
+ - 撤销(Undo)
+`command + Z`
+
+- 取消撤销(Undo)
+`shift+command + Z`
+
+- 剪切(Cut)
+`command + X`
+
+- 拷贝(Copy)
+`command + C`
+
+- 粘贴(Paste)
+`command + V`
+
+- 选择所有(Select All)
+`command + A`
+
+- 快速跳到指定行(Jump To...)
+`command + L`
+
+
+
+
+

@@ -1,96 +1,230 @@
-# Site settings
-title: Larry Blog
-SEOTitle: Larry的博客 | Larry Blog
+# 网站设置
+
+# 导入主题
+theme: jekyll-theme-chirpy
+#remote_theme: LarryLib/jekyll-theme-chirpy
+
+# 仅当你的站点类型是 Github Pages 项目并且没有自定义域名时，修改下面的值为 '/项目名'。
+baseurl: ""
+
+# 站点的语言 › https://www.w3.org/International/questions/qa-choosing-language-tags
+# 如果在文件夹 `_data/locales` 下存在同名文件，则布局语言也会改变，
+# 否则，布局语言使用默认值 'en'。
+lang: zh-CN
+
+# 修改为你的时区 › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Asia/BeiJing
+
+# jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# --------------------------
+title: Larry的博客       # 主标题
+
+tagline: iOS开发、Flutter开发 # 副标题
+
+description: >- # 由 seo meta 和 atom feed 使用
+  "夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及"
+
+# 填入你的网站的协议和域名，例如，'https://username.github.io'
+url: "https://wuxuange.com"
+
+author: 刘晓东 # 全名
+
+github:
+  username: LarryLib # Github 用户名
+
+twitter:
+  username: LarryLiu12138 # 推特用户名
+
+social:
+  # 改为你的全名。
+  # 这将会显示为帖子的默认作者以及页脚的版权所有者
+  name: Larry
+  email: func_dev@126.com # 邮箱地址
+  links:
+    # 第一个链接将会作为版权所有者的链接
+    - https://github.com/LarryLib # Github 主页
+    - https://twitter.com/LarryLiu12138 # 推特主页
+    - https://www.facebook.com/LarryLiu12138
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: # 填入你的认证字符串
+
+# ↑ --------------------------
+# `jekyll-seo-tag` 设置结束
+
+google_analytics:
+  id: "G-KPS91REP8N" # 填入你的 Google Analytics ID
+
+# 设置首选配色方案
+#
+# 提示: 保留空白会跟随系统的默认首选配色，并且在侧边栏的底部会出现
+# 一个可以转换亮色主题和暗色主题的按钮。
+#
+# 可用选项:
+#
+#     light  - 使用亮色方案
+#     dark   - 使用暗色方案
+#
+theme_mode: # [light|dark]
+
 header-img: img/home-bg.jpg
-email: func_dev@126.com
-description: "这里是 @Larry 的个人博客"
-keyword: "刘晓东，Larry，个人博客，iOS，Flutter，OC/Swift/Dart，移动互联网开发，大前端开发"
-url: "https://wuxuange.com" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
-# Publish posts or collection documents with a future date.
-future: true
+# 启用动画背景特效
+backgroud_animation: false
 
-# SNS settings
-RSS: false
-weibo_username: Larry
-zhihu_username: Larry
-github_username: Larry
-twitter_username: Larry
-#facebook_username:  Larry
-#linkedin_username:  Larry
+# 启用鼠标点击特效
+mouse_click_effect: true
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
+# 图像 CDN 端点。
+# 注意一旦被分配，CDN 网址会被加在
+# 所有以 '/' 开始的图像（网站头像和帖子中的图像）路径上
+# 
+# 例如，'https://cdn.com'
+img_cdn: ""
+
+# 侧边栏的头像，支持本地或 CROS 资源
+avatar: img/avatar.png
+
+# 设置显示右侧边栏的内容
+panel:
+  # 设置显示在帖子中右侧边栏的内容
+  # 
+  # 提示:
+  #   全局开关为 false 时必定不显示对应块。
+  #   全局开关为 true 时，可以在帖子的 md 文件头部使用形如:
+  #      lastmod: false
+  #   的方式为该帖子单独关闭右侧边栏的功能。
+  post:
+    # 最近更新
+    lastmod: true
+    # 热门标签
+    trending_tags: true
+    # 外部链接
+    external_links: true
+    # 目录
+    toc: true
+
+comments:
+  active: disqus # 帖子评论区全局开关，例如，'disqus'。保持为空表示禁用
+  # active 选项可以是如下：
+  # disqus 评论系统 > https://disqus.com/
+  disqus:
+    shortname: Larry # 填入你的 disqus shorname › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances 评论系统 › https://utteranc.es/
+  utterances:
+    repo: # <Github 用户名>/<仓库名>
+    issue_term: # < 链接 | 路径 | 标题 | ...>
+  # Waline 评论系统 › https://waline.js.org/
+  waline:
+    server: # Vercal 服务端地址
+    placeholder: 说点什么吧！ # 空白评论框时显示的文字
+    avatar: mp # 默认头像  › https://waline.js.org/guide/client/avatar.html
+  # Giscus 选项 › https://giscus.app
+  giscus:
+    repo: # <Github 用户名>/<仓库名>
+    repo_id:
+    category:
+    category_id:
+    mapping: # 可选项，默认为 'pathname'
+    input_position: # 可选项，默认为 'bottom'
+    lang: # 可选项，默认为 `site.lang` 的值
+    reactions_enabled: # 可选项，默认为 1
+
+# 自托管静态资产，可选 › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # 布尔值, 置空表示否
+    # 指定 Jekyll 环境，置空意味着都启用
+    # 仅在 `assets.self_host.enabled` 为 'true' 时生效
+    env: # [development|production]
+
+pwa:
+  enabled: true # PWA 特性选项
+
+# 每一页的帖子数量
 paginate: 10
-exclude:
-  [
-    "less",
-    "node_modules",
-    "Gruntfile.js",
-    "package.json",
-    "README.md",
-    "README.zh.md",
-  ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
+# ------------ 下面的设置不建议修改 ------------------
 
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
 kramdown:
-  input: GFM # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge 设置 › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    default_lang: console
     span:
       line_numbers: false
     block:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-disqus_username: Larry
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-# Netease settings
-netease_comment: false
+defaults:
+  - scope:
+      path: "" # 空字符串意味着项目里的所有文件
+      type: posts
+    values:
+      layout: post
+      comments: true # 在帖子中启用评论
+      # 右侧边栏的默认显示
+      lastmod: true
+      trending_tags: true
+      external_links: false
+      toc: true
+      license: true
+      # 不要改变它除非你是 Jekyll 以及 Web 开发的专家，
+      # 或者你认为自己足够聪明可以在此模板中修改为其他的相对路径。
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: true
+  - scope:
+      path: ""
+      type: tabs # 参考 `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: /assets/img/favicons/favicon.ico
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
 
-# Analytics settings
-# Baidu Analytics (https://tongji.baidu.com/main/setting/10000573707/home/site/index)
-ba_track_id: 7dc016ed3ed3019aa6f4ed3f8b088e04
+sass:
+  style: compressed
 
-# Google Analytics (https://analytics.google.com/analytics/web/#/p403176009/reports/reportinghub)
-ga_track_id: "G-KPS91REP8N" # Format: UA-xxxxxx-xx
-ga_domain: wuxaunge.com
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
-# Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "程序从0和1开始"
-sidebar-avatar: https://github.com/LarryLib.png # use absolute URL, seeing it's used in both `/` and `/about/`
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+  - rollup.config.js
+  - node_modules
+  - package*.json
 
-# Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
-
-# Friends
-friends:
-  [
-    { title: "0", href: "http://wuxuange.com/" },
-    { title: "1", href: "https://wuxuange.com/" },
-  ]
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
